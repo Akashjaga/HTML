@@ -1,8 +1,11 @@
- h1,
+ h1 {
+     text-shadow: yellow;
+ }
  P1,
  h4 {background-color: aqua;} 
  h2, 
- h3 {background-color: burlywood;}
+ h3 
+ {background-color: whitesmoke;}
  body {
      background-image: url(../assets/index\ 1.jpg);
      background-size: cover;
