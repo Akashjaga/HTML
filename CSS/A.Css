@@ -3,3 +3,7 @@
  h4 {background-color: aqua;} 
  h2, 
  h3 {background-color: burlywood;}
+ body {
+     background-image: url(../assets/index\ 1.jpg);
+     background-size: cover;
+ }
