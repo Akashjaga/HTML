@@ -1,0 +1,30 @@
+<html>
+    <head>
+        <title>JS Form Validation</title>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    </head>
+    
+    <script>
+        function validateform(){
+            var name=document.myform.name.value;
+            var password=document.myform.password.value;
+
+            if (name==null || name==""){
+                alert('name cant be blank');
+                return false;
+            } else {
+                if(password.length<6){
+                    alert("password must be atleasr 6 characters long")
+                    return false;       
+                }
+            }
+        }
+    </script>   
+    <body>
+        <form name="myform" method="post" onsubmit="return validateform()">
+        name: <input type="text" name="name" ><br/>
+        password: <input type="password" name="password"><br/>
+        <input type="submit" value="register">
+        </form>
+    </body>
+</html>
